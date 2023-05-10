@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/style/style.css"
+      media="screen"
+    />
+    <title>Gerador de senhas</title>
+  </head>
+  <body>
+    <img src="/img/Banco_Itaú_logo 1.png " id="logo" alt="" />
+    <h1 class="title">Crie senhas seguras</h1>
+    <div class="password">
+      <div class="div-password">
+        <input type="checkbox" name="ABC" id="capitalLetters" />
+        <label for="capitalLetters">ABC</label>
+        <input type="checkbox" name="abc" id="smallLetters" />
+        <label for="smallLetters">abc</label>
+        <input type="checkbox" name="number" id="number" />
+        <label for="number">123</label>
+        <input type="checkbox" name="characters" id="characters" />
+
+        <label for="characters">#$@</label>
+      </div>
+
+      <div class="size-password">
+        <h4>Tamanho da senha</h4>
+
+        <input type="range" name="" id="tamanho" min="4" max="20" />
+        <br /><br />
+        <span id="valor">10</span>
+      </div>
+
+      <div class="result">
+        <input
+          type="button"
+          value="Gerar senha"
+          class="bnt"
+          onclick="generatePassword()"
+        />
+
+        <p id="newPassword"></p>
+      </div>
+    </div>
+
+    <hr />
+
+    <script type="text/javascript" src="script/script.js"></script>
+  </body>
+</html>
